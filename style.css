@@ -1,0 +1,180 @@
+.node {
+    cursor: pointer;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node text {
+    font: 10px sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Tooltip css */
+
+.customTooltip-wrapper {
+    opacity: 0;
+  /* NEW */
+  display: none;
+    position: absolute;
+}
+.customTooltip {
+  background: #eee;
+  /* NEW */
+  box-shadow: 0 0 5px #999999;
+  /* NEW */
+  color: #333;
+  /* NEW */
+ position: absolute;
+  /* NEW */
+  font-size: 12px;
+  /* NEW */
+  left: 130px;
+  /* NEW */
+  padding: 5px;
+  /* NEW */
+
+  /* NEW */
+  text-align: center;
+  /* NEW */
+  top: 95px;
+  /* NEW */
+  width: 350px;
+  /* NEW */
+  z-index: 10;
+  text-align:left;
+}
+.tooltip-desc,.tooltip-image-wrapper{
+  display:inline-block;
+  float:left;
+}
+
+.tooltip-desc{
+  padding-left:10px;
+  margin-top:-10px;
+  overflow:auto;
+}
+.tooltip-desc h4{
+  text-decoration:none;
+  color:black;
+  margin-bottom:2px;
+  margin-top:14px;
+}
+.tooltip-desc .name{
+  color:RoyalBlue  ;
+    margin-bottom:2px;
+  margin-top:14px;
+}
+.tooltip-desc .tags-wrapper .title{
+  display:inline-block;
+  float:left;
+}
+.tooltip-desc .tags-wrapper .tags{
+  display:inline-block;
+  float:left;
+}
+/* TAGS */
+
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  font-size:11px;
+  background: #a2b8bc;
+  border-radius: 1px 0 0 1px;
+  color: #f2f8f6;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px 0 5px;
+  position: relative;
+  margin: 0 5px 5px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+  /* Find My Self button css*/
+
+.btn {
+
+
+  padding: 0;
+  cursor:pointer;
+  padding:5px;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn:active:before {
+  width: 20px;
+  padding-top: 20px;;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+  left:40px;
+}
+
+
+.btn:before {
+  content: "";
+  
+  position: absolute;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-20%, -20%);
+  -moz-transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  -o-transform: translate(-20%, -20%);
+  transform: translate(-20%, -20%);
+}
+
+/* SVG */
+text{
+  fill:dimgray;
+}
